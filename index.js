@@ -41,6 +41,7 @@ console.log(fifaData[828]["Win conditions"])
 
 function theFinalList(data){
 let finalist= data => data.Stage ==="Final";
+return (finalist())
 }
  console.log(theFinalList(fifaData))
 /* Task 3: Implement a higher-order function called `getYears` that accepts the callback function `getFinals`, and returns an array called `years` containing all of the years in the dataset */
