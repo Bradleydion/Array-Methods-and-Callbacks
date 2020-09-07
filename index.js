@@ -66,13 +66,27 @@ return (winningYears)
 
 /* Task 4: Implement a higher-order function called `getWinners`, that accepts the callback function `getFinals()` and determine the winner (home or away) of each `finals` game. Return the name of all winning countries in an array called `winners` */ 
 
-function getWinners(/* code here */) {
+// Not all of the winning conditions are written out for the finals. Ontop of that the data isnt set up in a way that says "this person won" I need to set up a function that looks through the away team score and the home team score, and return the name of the team whos score was highest in each finals game. Im not sure how to do this with out using an if else statemnent. 
 
-    /* code here */
+// function getWinners(array) {
+// const winners = {}
+// getFinals(array)
+//     if("Home Team Goals" >= "Away Team Goals"){
+//         winners.push("Home Team Name")
+//     }
+//     else {winners.push("Away Team Name")}
+// };
 
-};
+// console.log (getWinners(fifaData));
 
-getWinners();
+function getWinners(array) {
+    const winners = {}
+  for(let i =0; i < getFinals.length; i++)
+    if(getFinals[i]["Home Team Goals"] >= getFinals[i]["Away Team Goals"]){
+        winners.push ("Home Team Goals")
+    }
+    
+    console.log (getWinners(fifaData));
 
 /* Task 5: Implement a higher-order function called `getWinnersByYear` that accepts the following parameters and returns a set of strings "In {year}, {country} won the world cup!" 
 
